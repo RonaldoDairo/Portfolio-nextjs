@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Skills from "../components/skills";
 import Experience from "../components/experience";
+import Portfolio from "../components/portfolio";
 const Index = () => (
   <Layout>
     {/* First Section */}
@@ -46,20 +47,28 @@ const Index = () => (
         <div className="card bg-light">
           <div className="card-body">
             <h1>Experience</h1>
-            <Experience/>
+            <Experience />
           </div>
         </div>
       </div>
     </div>
     {/* Third Section */}
     <div className="row">
-    <div className="col-md-12">
-    <div className="card card-body bg-card">
+      <div className="col-md-12">
+        <div className="card card-body bg-dark">
+          <div className="row">
+            <div className="col-md-12">
+              <h1 className="text-center text-light">Portfolio</h1>
+            </div>
+            
 
-    </div>
 
-    </div>
+        <Portfolio/>
 
+
+          </div>
+        </div>
+      </div>
     </div>
   </Layout>
 );
