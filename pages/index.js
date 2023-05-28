@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
-
+import Skills from "../components/skills";
+import Experience from "../components/experience";
 const Index = () => (
   <Layout>
     {/* First Section */}
@@ -36,16 +37,8 @@ const Index = () => (
         <div className="card bg-light">
           <div className="card-body">
             <h1>Skills</h1>
-              <h5>Javascript</h5>
-            <div className="progress">
-          
-              <div
-                className="progress-bar"
-                role="progressbar"
-                style={{ width: "80%" }}
-              ></div>
-            </div>
-            
+
+            <Skills />
           </div>
         </div>
       </div>
@@ -53,9 +46,20 @@ const Index = () => (
         <div className="card bg-light">
           <div className="card-body">
             <h1>Experience</h1>
+            <Experience/>
           </div>
         </div>
       </div>
+    </div>
+    {/* Third Section */}
+    <div className="row">
+    <div className="col-md-12">
+    <div className="card card-body bg-card">
+
+    </div>
+
+    </div>
+
     </div>
   </Layout>
 );
